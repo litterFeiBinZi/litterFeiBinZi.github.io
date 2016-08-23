@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/foot.css">
+	<!-- <link rel="stylesheet" href="swiper-3.3.1.min.css"> -->
+	<style>
+		body{margin:0;padding:0;background:#fff;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+		form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+		img{border:0;}
+		ul,li{list-style-type:none;}
+		a{color:#00007F;text-decoration:none;}
+		a:hover{text-decoration:none;}
+
+		#head_wrap{
+			position: fixed;
+			width: 100%;
+			height: 67.1875px;
+			background: rgb(27,27,27);
+			z-index: 3;
+		}
+		#j_nav_2 a{
+			border: 0px;
+		}
+		#j_nav_6 a{
+			width: 64.6719px;
+			height: 29px;
+			border: 1px solid rgb(123,123,123);
+			border-radius: 5px;
+		}
+
+		#foot_wrap{
+			position: relative;
+			top: 1200px;
+			width: 100%;
+			height: 128px;
+		}
+		.container {
+			position: relative;
+			top: 67.1875px;
+		    width: 100%;
+		    height: 1400px;
+		}
+		.slide1{
+			width: 350px;
+			height: 400px;
+			margin: 0 auto;
+			margin-left: 70%;
+			text-align: center;
+		}
+		.slide1 img{
+			width: 300px;
+			height: 400px;
+		}
+		.wrapper11{
+			width: 100%;
+			height: 400px;
+			background: #ccc;
+		}
+		.wrapper12{
+			position: relative;
+			width: 100%;
+			height: 400px;
+		}
+		.wrapper21{
+			width: 100%;
+			height: 400px;
+			background: #ccc;
+			position: relative;
+		}
+		.wrapper32{
+			width: 100%;
+			height: 400px;
+			position: relative;
+		}
+		.wrapper31{
+			width: 100%;
+			height: 400px;
+			background: #ccc;
+		}
+		.wrapper22{
+			width: 100%;
+			height: 400px;
+			position: relative;
+		}
+		#slide1 img:nth-child(1){
+			position: relative;
+			left: 38px;
+		}
+		.slide2{
+			width: 350px;
+			height: 400px;
+			margin: 0 auto;
+			margin-left: 10%;
+			text-align: center;
+		}
+		.slide2 img{
+			width: 300px;
+			height: 400px;
+		}
+		#slide2 img:nth-child(2){
+			position: absolute;
+			left: 64.6%;
+		}
+		
+		.slide3{
+			position: absolute;
+			width: 350px;
+			height: 400px;
+			top: 86%;
+			left: 67%;
+
+			text-align: center;
+		}
+		.slide3 img{
+			width: 300px;
+			height: 400px;
+			margin-left: 42px;
+		}
+		.slide3 img:nth-child(1){
+			position: relative;
+		}
+		#slide3{
+			position: absolute;
+			top: -400px;
+			left: 67%;
+			margin-left: -42px;
+		}
+		#wrapSm1{
+			position: absolute;
+			width: 350px;
+			height: 350px;
+			top: 2%;
+			left: 20%;
+		}
+		#wrapSm1 h2{
+			border: 2px solid black;
+			width: 30px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		#wrapSm1 h3{
+			width: 200px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		#wrapSm1 img{
+			width: 100px;
+		}
+
+		#wrapSm2{
+			position: absolute;
+			width: 460px;
+			height: 350px;
+			top: 5%;
+			left: 20%;
+		}
+		#wrapSm2 h2{
+			border: 2px solid black;
+			width: 30px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		#wrapSm2 h3{
+			width: 200px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		#wrapSm2 img{
+			/*width: 200px;*/
+			margin-left: 5px;
+			float: left;
+		}
+
+		#wrapSm3{
+			position: absolute;
+			width: 510px;
+			height: 350px;
+			top: 5%;
+			left: 50%;
+		}
+		#wrapSm3 h2{
+			border: 2px solid black;
+			width: 30px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		#wrapSm3 h3{
+			width: 200px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		#wrapSm3 img{
+			/*width: 200px;*/
+			margin-left: 5px;
+			float: left;
+		}
+
+		#wrapSm4{
+			position: absolute;
+			width: 400px;
+			height: 350px;
+			top: 5%;
+			left: 25%;
+		}
+		#wrapSm4 h2{
+			border: 2px solid black;
+			width: 30px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		#wrapSm4 h3{
+			width: 300px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		#wrapSm4 img{
+			width: 220px;
+			margin-left: 5px;
+			/*float: left;*/
+		}
+		.wrapper22 .slide2 img{
+			opacity: 0.5;
+		}
+
+		#wrapSm5{
+			position: absolute;
+			width: 400px;
+			height: 350px;
+			top: -55%;
+			left: 20%;
+		}
+		#wrapSm5 h2{
+			border: 2px solid black;
+			width: 30px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		#wrapSm5 h3{
+			width: 200px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+		}
+	</style>
+</head>
+<body>
+	<div id="head_wrap">
+		<ul id="j_nav">
+			<li id="j_nav_1">
+				<div id="logo_wrap">
+					<a href="">
+						<img src="img/shininglogo.png" alt="">
+					</a>
+				</div>
+			</li>
+			<li id="j_nav_2">
+				<a href="home.html">Home</a>
+			</li>
+			<li id="j_nav_3">
+				<a href="about.html">About</a>
+			</li>
+			<li id="j_nav_4">
+				<a href="Rendering.html">Rendering</a>
+			</li>
+			<li id="j_nav_5">
+				<a href="3D Animation.html">3D Animation</a>
+			</li>
+			<li id="j_nav_6">
+				<a href="Bin.html">Bin</a>
+			</li>
+			<li id="j_nav_7">
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="container">
+	    <div class="wrapper11">
+			<div id="wrapSm1">
+				<h2>1</h2><h3>MODEL COMPLETION</h3>
+				<br>
+				<br>
+				<br>
+				<span>Establishing and creating the visible and multi-<br>dimension Architecture, Structural and MEP</span>
+				<br>
+				<br>
+				<img src="img5/BIM-p1-1.png" alt="">
+				<img src="img5/BIM-p1-2.png" alt="">
+				<img src="img5/BIM-p1-3.png" alt="">
+			</div>
+
+	        <div class="slide1" id="slide1">
+	            <img src="img5/BIM-building1.png">
+	        </div>
+		</div>
+	    <div class="wrapper12">
+		    <div id="wrapSm2">
+				<h2>2</h2><h3>CLASH DETECTION</h3>
+				<br>
+				<br>
+				<br>
+				<span>Completing the clash detection among various design <br>parties,engineers and even different organisations in <br> con struction drawings.</span>
+				<br>
+				<br>
+				<img src="img5/BIM-p2-1.jpg" alt="">
+				<img src="img5/BIM-p2-2.jpg" alt="">
+			</div>
+	        <div class="slide1">
+	            <img src="img5/BIM-building1-half.png">
+	        </div>
+	    </div>
+	    <div class="wrapper21">
+	    	 <div id="wrapSm3">
+				<h2>3</h2><h3>MEP INTEGRATION</h3>
+				<br>
+				<br>
+				<span>Profoundly completing the pipeline <br> integration, design coordination and <br>intra-organisational cooperation <br>between Plumbing, HVAC and <br> Electrical engineering.</span>
+				<br>
+				<br>
+				<img src="img5/BIM-p3-1.jpg" alt="">
+				<img src="img5/BIM-p3-2.jpg" alt="">
+			</div>
+	        <div class="slide2">
+	            <img src="img5/building2-half-t.png">
+        	</div>
+    	</div>
+	    <div class="wrapper22">
+	    	<div id="wrapSm4">
+				<h2>4</h2><h3>CURTAIN WALL REMEDYING</h3>
+				<br>
+				<br>
+				<span>Creating the abnormity wall based on parametric  <br> design tools, and completing detailed curtain wall  <br>nodes visibly.</span>
+				<br>
+				<br>
+				<img src="img5/BIM-p4-1.jpg" alt="">
+				<img src="img5/BIM-p4-2.jpg" alt="">
+			</div>
+        	<div class="slide2" id="slide2">
+	            <img src="img5/BIM-building2-half.png">
+        	</div>
+    	</div>
+	    <div class="wrapper31">
+    		<div class="slide3">
+	            <img src="img5/building3-half-t.png">
+	        </div>
+        </div>
+	    <div class="wrapper32">
+	    	<div id="wrapSm5">
+				<h2>5</h2><h3>BIM CONSULTING</h3>
+				<br>
+				<br>
+				<span>To help you to precisely know what is BIM? How BIM <br> use? When and who is suitably to implement BIM?</span>
+			</div>
+    		<div class="slide3" id="slide3">
+	            <img src="img5/building3-half-b.png">
+	        </div>
+        </div>
+
+	</div>
+
+
+
+		<div id="foot_wrap">
+		<div id="f_nav1">
+			<a>
+				<img src="img/010.jpg" alt="">
+				<img src="img/001.jpg" alt="">
+			</a>
+		</div>
+	
+		<div id="f_nav2">
+			<a>
+				<img src="img/020.jpg" alt="">
+				<img src="img/002.jpg" alt="">
+			</a>
+			<a>
+				<img src="img/030.jpg" alt="">
+				<img src="img/003.jpg" alt="">
+			</a>
+			<a>
+				<img src="img/040.jpg" alt="">
+				<img src="img/004.jpg" alt="">
+			</a>
+			<a>
+				<img src="img/050.jpg" alt="">
+				<img src="img/005.jpg" alt="">
+			</a>
+		</div>
+		<div>
+			<a>
+				Copyright © 1998-2015 shining Group
+			</a>
+		</div>
+	</div>
+</body>
+	<script src='jquery-3.0.0.min.js'></script>
+	<script src='js/foot.js'></script>
+	<script src="swiper-3.3.1.min.js"></script>
+	<script> 
+		// $('html body').animate({scrollTop:'0px'},3000);
+    
+	</script>
+
+
+
+
+
+
+
+
+
+</html>

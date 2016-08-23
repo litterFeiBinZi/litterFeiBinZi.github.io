@@ -1,0 +1,78 @@
+#head_wrap{
+	position: fixed;
+	width: 100%;
+	height: 67.1875px;
+	background: rgb(27,27,27);
+}
+#j_nav{
+	width: 1100px;
+	margin: 0px auto;
+}
+#j_nav li{
+	float: left;
+	height: 67.1875px;
+	text-align: center;
+	line-height: 67.1875px;
+}
+#j_nav li a{
+	color: white;
+}
+#logo_wrap{
+	width: 150px;
+	height: 67px;
+	margin-top: 16px;
+}
+#j_nav_2{
+	width: 64.6875px;
+	margin-left: 500px;
+}
+#j_nav_2 a{
+	width: 64.6719px;
+	height: 29px;
+	border: 1px solid rgb(123,123,123);
+	border-radius: 5px;
+}
+#j_nav_3{
+	width: 61.8125px;	
+}
+#j_nav_3 a{
+	width: 61.8125px;
+	height: 27px;
+	border-radius: 5px;
+}
+#j_nav_4{
+	width: 93.8281px;	
+}
+#j_nav_4 a{
+	width: 93.8281px;
+	height: 27px;
+	border-radius: 5px;
+}
+#j_nav_5{
+	width: 116.047px;		
+}
+#j_nav_5 a{
+	width: 116.047px;
+	height: 27px;
+	border-radius: 5px;7;
+}
+#j_nav_6{
+	width: 47.5625px;	
+}
+#j_nav_6 a{
+	width: 47.5625px;
+	height: 27px;
+	border-radius: 5px;
+}
+#j_nav_7{
+	width: 64.6875px;	
+
+}
+#j_nav_7 a{
+	width: 64.6875px;
+	height: 27px;
+	border-radius: 5px;
+}
+#j_nav li:hover a{
+	border: 1px solid rgb(123,123,123);
+}

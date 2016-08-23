@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/foot.css">
+	<style>
+		body{margin:0;padding:0;background:#fff;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+		form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+		img{border:0;}
+		ul,li{list-style-type:none;}
+		a{color:#00007F;text-decoration:none;}
+		a:hover{text-decoration:none;}
+
+		#head_wrap{
+			position: fixed;
+			width: 100%;
+			height: 67.1875px;
+			background: rgb(27,27,27);
+		}
+		#j_nav_2 a{
+			border: 0px;
+		}
+		#j_nav_5 a{
+			width: 64.6719px;
+			height: 29px;
+			border: 1px solid rgb(123,123,123);
+			border-radius: 5px;
+		}
+		#body_wrap{
+			position: relative;
+			top: 67.1875px;
+			width: 980px;
+			height: 506px;
+			margin: 0 auto;
+		}
+		#foot_wrap{
+			position: relative;
+			top: 110px;
+			width: 100%;
+			height: 128px;
+		}
+		#video_wrap{
+			width: 100%;
+			height: 600px;
+			background: rgb(27,27,27);
+			text-align: center;
+		}
+		#img_1{
+			position: absolute;
+			left: 50%;
+			top:300px;
+		}
+		#video_font{
+			position: relative;
+			bottom: 50px;
+			width: 100%;
+			height: 50px;
+			font-size: 30px;
+			line-height: 50px;
+			background: rgba(0,0,0,0.3);
+			color: rgba(255,255,255,0.3);
+		}
+		#body_wrap{
+			width: 100%;
+			height: 1000px;
+		}
+		#body_wrap ul{
+			width: 90%;
+			height: 30%;
+			margin-left: 5%;
+			margin-top: 2.5%;
+		}
+		#body_wrap ul li{
+			position: relative;
+			float: left;
+			width: 30%;
+			height: 100%;
+			background: red;
+			margin-left: 2.5%;
+		}
+		#body_wrap ul li  img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		#body_wrap ul li .play{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: rgba(0,0,0,0);
+			text-align: center;
+		}
+		#body_wrap ul li .play img{
+			width: 5%;
+			height: 10%;
+			margin-top: 35%;
+		}
+		#body_wrap ul li .play2{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: rgba(0,0,0,0);
+			text-align: center;
+			display: none;
+		}
+		#body_wrap ul li .play2 img{
+			width: 5%;
+			height: 10%;
+			margin-top: 35%;
+			
+		}
+		#body_wrap ul li:hover .play2{
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="head_wrap">
+		<ul id="j_nav">
+			<li id="j_nav_1">
+				<div id="logo_wrap">
+					<a href="">
+						<img src="img/shininglogo.png" alt="">
+					</a>
+				</div>
+			</li>
+			<li id="j_nav_2">
+				<a href="home.html">Home</a>
+			</li>
+			<li id="j_nav_3">
+				<a href="about.html">About</a>
+			</li>
+			<li id="j_nav_4">
+				<a href="Rendering.html">Rendering</a>
+			</li>
+			<li id="j_nav_5">
+				<a href="3D Animation.html">3D Animation</a>
+			</li>
+			<li id="j_nav_6">
+				<a href="Bin.html">Bin</a>
+			</li>
+			<li id="j_nav_7">
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="video_wrap">
+		<a href="">
+			<img src="img4/anibg.png" alt="">
+		</a>
+		<img src="img4/001.png" alt="" id="img_1">
+
+		<div id="video_font">
+			Sichuan Province-Commercial Rea
+		</div>
+	</div>
+
+	<div id="body_wrap">
+		<ul>
+			<li>
+				<img src="img4/rd1.jpg" alt="">
+				<div class="play"><img src="img4/play1.png" alt=""></div>
+				<div class="play2"><img src="img4/play2.png" alt=""></div>
+			</li>
+			<li>
+				<img src="img4/rd2.jpg" alt="">
+				<div class="play"><img src="img4/play1.png" alt=""></div>
+				<div class="play2"><img src="img4/play2.png" alt=""></div>
+			</li>
+
+			<li>
+				<img src="img4/rd3.jpg" alt="">
+				<div class="play"><img src="img4/play1.png" alt=""></div>
+				<div class="play2"><img src="img4/play2.png" alt=""></div>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<img src="img4/rd4.jpg" alt="">
+				<div class="play"><img src="img4/play1.png" alt=""></div>
+				<div class="play2"><img src="img4/play2.png" alt=""></div>
+			</li>
+			<li>
+				<img src="img4/rd5.jpg" alt="">
+				<div class="play"><img src="img4/play1.png" alt=""></div>
+				<div class="play2"><img src="img4/play2.png" alt=""></div>
+			</li>
+			<li>
+				<img src="img4/rd6.jpg" alt="">
+				<div class="play"><img src="img4/play1.png" alt=""></div>
+				<div class="play2"><img src="img4/play2.png" alt=""></div>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<img src="img4/rd7.jpg" alt="">
+				<div class="play"><img src="img4/play1.png" alt=""></div>
+				<div class="play2"><img src="img4/play2.png" alt=""></div>
+			</li>
+			<li>
+				<img src="img4/rd8.jpg" alt="">
+				<div class="play"><img src="img4/play1.png" alt=""></div>
+				<div class="play2"><img src="img4/play2.png" alt=""></div>
+			</li>
+			<li>
+				<img src="img4/rd9.jpg" alt="">
+				<div class="play"><img src="img4/play1.png" alt=""></div>
+				<div class="play2"><img src="img4/play2.png" alt=""></div>
+			</li>
+		</ul>
+	</div>
+
+	<div id="foot_wrap">
+		<div id="f_nav1">
+			<a>
+				<img src="img/010.jpg" alt="">
+				<img src="img/001.jpg" alt="">
+			</a>
+		</div>
+
+		<div id="f_nav2">
+			<a>
+				<img src="img/020.jpg" alt="">
+				<img src="img/002.jpg" alt="">
+			</a>
+			<a>
+				<img src="img/030.jpg" alt="">
+				<img src="img/003.jpg" alt="">
+			</a>
+			<a>
+				<img src="img/040.jpg" alt="">
+				<img src="img/004.jpg" alt="">
+			</a>
+			<a>
+				<img src="img/050.jpg" alt="">
+				<img src="img/005.jpg" alt="">
+			</a>
+		</div>
+		<div>
+			<a>
+				Copyright © 1998-2015 shining Group
+			</a>
+		</div>
+	</div>
+</body>
+	<script src='jquery-3.0.0.min.js'></script>
+	<script src='js/foot.js'></script>
+
+	<script>
+
+	</script>
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

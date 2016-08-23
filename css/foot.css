@@ -1,0 +1,33 @@
+#foot_wrap{
+	/*position: relative;*/
+	/*bottom: 0;*/
+	text-align: center;
+}
+#f_nav1{
+	height: 40px;
+	position:relative;
+}
+#f_nav1 a img{
+	position: absolute;
+}
+
+#f_nav2{
+	position: relative;
+	width: 160px;
+	height: 50px;
+	margin:0 auto;
+}
+#f_nav2 a{
+	float: left;
+	width: 40px;
+	height: 25px;
+}
+#f_nav2 a img{
+	position: absolute;
+}
+#f_nav3{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom:0;
+}
